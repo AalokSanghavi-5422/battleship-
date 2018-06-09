@@ -14,6 +14,7 @@ import javax.swing.*;
 public class Board extends GBFrame{
 	JButton [][] arrayButtons = new JButton[11][11];
 	static SecondaryGUI sGUI = new SecondaryGUI();
+	static ControlPanel cGUI = new ControlPanel();
 
 	public Board(){
 
@@ -62,7 +63,10 @@ public class Board extends GBFrame{
 		sGUI.setVisible(true);
 		GUI.setSize(600, 600);
 		GUI.setVisible(true);
-		GUI.setLocation(0, 400);
+		cGUI.setSize(250, 100);
+		cGUI.setVisible(true);
+		cGUI.setLocation(470, 200);
+		GUI.setLocation(0, 395);
 		sGUI.setLocation(80,0);
 
 
@@ -70,5 +74,6 @@ public class Board extends GBFrame{
 	}
 
 }
+
 
 
