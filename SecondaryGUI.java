@@ -1,6 +1,3 @@
-
-
-
 import BreezySwing.*;
 
 import java.awt.*;
