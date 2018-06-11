@@ -98,15 +98,21 @@ public class Grid {
 
 
 	}
+	public boolean checkHit(Point P) throws Exception{
+		int x = P.getX();
+		int y = P.getY();
+		attack(x,y);
+		return grid[x][y].getHit();
+	}
+	
 	public void attack(int x, int y) throws Exception{
-
-
-
 		grid[x][y].attack();
+	}
 
-
-
-
+	public void attack(Point P) throws Exception{
+		int x = P.getX();
+		int y = P.getY();
+		grid[x][y].attack();
 	}
 
 	public Point getPoint(int x, int y){
@@ -114,6 +120,11 @@ public class Grid {
 		return grid[x][y];
 
 	}
+	public Point getPoint(Point P){
+		int x = P.getX();
+		int y = P.getY();
+		return grid[x][y];
 
+	}
 
 }
